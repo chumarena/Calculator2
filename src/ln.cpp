@@ -16,7 +16,8 @@ public:
     }
 };
 
-// Обязательная точка входа в DLL
+
 extern "C" __declspec(dllexport) IPlugin* createPlugin() {
     return new LnPlugin();
+
 }
